@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Surprise Varsha 🎂</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- PAGE 1 -->
+    <section class="page active page1" id="page1">
+
+        <div class="floating-hearts"></div>
+
+        <div class="small-title">A LITTLE SURPRISE</div>
+
+        <h1>Happy Birthday VARSHA 🎂</h1>
+
+        <p>Something special for Special Person...</p>
+
+        <button class="main-btn" onclick="startSurprise()">
+            START THE SURPRISE ✨
+        </button>
+
+    </section>
+
+
+    <!-- PAGE 2 -->
+    <section class="page page2" id="page2">
+
+        <div class="dark-room">
+
+            <div class="moon"></div>
+
+            <div class="room-text">
+
+                <div class="small-title">UH OH...</div>
+
+                <h1>Room is Dark 🌑</h1>
+
+                <p>Maybe we should turn on the lights...</p>
+
+                <button class="light-btn" onclick="turnOnLight()">
+                    ON THE LIGHT 💡
+                </button>
+
+            </div>
+
+            <div class="balloons" id="balloons">
+
+                <span class="balloon b1">🎈</span>
+                <span class="balloon b2">🎈</span>
+                <span class="balloon b3">🎈</span>
+                <span class="balloon b4">🎈</span>
+                <span class="balloon b5">🎈</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 3 -->
+    <section class="page page3" id="page3">
+
+        <div class="stars"></div>
+
+        <div class="firework fw1">✦</div>
+        <div class="firework fw2">✦</div>
+        <div class="firework fw3">✦</div>
+        <div class="firework fw4">✦</div>
+        <div class="firework fw5">✦</div>
+
+        <div class="firework-text">
+
+            <div class="small-title">
+                IT'S YOUR SPECIAL DAY
+            </div>
+
+            <h1>
+                Happy Birthday
+                 Mama Varshuuuu❤️😘😘😘😘
+            </h1>
+
+            <p>
+                Because This Moment Belongs To You 🌺🌺
+            </p>
+
+            <button class="main-btn dark-btn" onclick="showPage(4)">
+                LET'S CONTINUE ✨
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 4 -->
+    <section class="page page4" id="page4">
+
+        <div class="small-title">CAKE TIME 🎂</div>
+
+        <h1>Cut the Cake</h1>
+
+        <p>Tap the knife and cut your birthday cake ✨</p>
+
+        <div class="cake-wrapper">
+
+            <div class="cake">
+
+                <div class="candle">
+                    <div class="flame"></div>
+                </div>
+
+                <div class="cake-top">
+                    <span>♥</span>
+                    <span>♥</span>
+                    <span>♥</span>
+                </div>
+
+                <div class="cream-line"></div>
+
+                <div class="cake-middle"></div>
+
+                <div class="cream-line second"></div>
+
+                <div class="cake-bottom"></div>
+
+                <div class="plate"></div>
+
+            </div>
+
+            <button class="knife" onclick="cutCake()">🔪</button>
+
+        </div>
+
+        <div id="cakeMessage" class="cake-message">
+            Tap the knife 🔪
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 5 -->
+    <section class="page page5" id="page5">
+
+        <div class="small-title">
+            YOUR SPECIAL DAY
+        </div>
+
+        <h1>Birthday Wishes 💌</h1>
+
+        <p>Tap the cards to reveal them ❤️</p>
+
+        <div class="wish-cards">
+
+            <!-- CARD 1 -->
+            <div class="wish-card" onclick="flipCard(this)">
+
+                <div class="card-inner">
+
+                    <div class="card-front">
+
+                        <span class="card-number">01</span>
+
+                        <h2>A Little Wish</h2>
+
+                        <small>Tap me ♡</small>
+
+                    </div>
+
+                    <div class="card-back">
+
+                        <img src="intro.png" alt="Wish">
+
+                        <p>
+                            May you send me
+                            your photos every
+                            single day please 🥺🥺
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 2 -->
+            <div class="wish-card" onclick="flipCard(this)">
+
+                <div class="card-inner">
+
+                    <div class="card-front">
+
+                        <span class="card-number">02</span>
+
+                        <h2>Another Wish</h2>
+
+                        <small>Tap me ♡</small>
+
+                    </div>
+
+                    <div class="card-back">
+
+                        <img src="pika.jpeg" alt="Wish">
+
+                        <p>
+                            May you always be surrounded by people
+                            who make you happy(including meee),
+                            moments that make you laugh,
+                            and memories that
+                            you'll cherish forever🌸✨
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 3 -->
+            <div class="wish-card" onclick="flipCard(this)">
+
+                <div class="card-inner">
+
+                    <div class="card-front">
+
+                        <span class="card-number">03</span>
+
+                        <h2>One More Thing</h2>
+
+                        <small>Tap me ♡</small>
+
+                    </div>
+
+                    <div class="card-back">
+
+                        <img src="esa.png" alt="Flowers">
+
+                        <p>
+                            Take this my Queen🫣💐
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="progress-area">
+
+            <div id="cardCount">
+                0 of 3 wishes discovered
+            </div>
+
+            <div class="progress-bar">
+                <div id="progressFill"></div>
+            </div>
+
+        </div>
+
+
+        <button id="surpriseButton"
+                class="main-btn hidden-btn"
+                onclick="goToPage6()">
+
+            1 MORE SURPRISE ✨
+
+        </button>
+
+    </section>
+
+
+    <!-- PAGE 6 -->
+    <section class="page page6" id="page6">
+
+        <div class="magic-bg">
+
+            <div class="glow g1"></div>
+            <div class="glow g2"></div>
+            <div class="glow g3"></div>
+
+            <div class="question-box">
+
+                <div class="small-title">
+                    WAIT... 👀
+                </div>
+
+                <h1>
+                    Do You Wanna See? ✨
+                </h1>
+
+                <p>
+                    There might be one more surprise...
+                </p>
+
+                <div class="choice-area" id="choiceArea">
+
+                    <button id="yesBtn"
+                            class="yes-btn"
+                            onclick="yesClicked()">
+                        YES 😏
+                    </button>
+
+                    <button id="noBtn"
+                            class="no-btn"
+                            onclick="noClicked()">
+                        NO 😑
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 7 -->
+    <section class="page page7" id="page7">
+
+        <div class="no-bg">
+
+            <div class="no-title">
+                WHY DID YOU CLICK NO?! 😭
+            </div>
+
+            <div class="no-content">
+
+                <div class="media-card">
+
+                    <video class="penguin"
+                           autoplay
+                           loop
+                           muted
+                           playsinline>
+
+                        <source src="penguin.mp4"
+                                type="video/mp4">
+
+                    </video>
+
+                </div>
+
+                <div class="media-card">
+
+                    <img src="baby.jpeg"
+                         alt="Baby"
+                         class="baby">
+
+                </div>
+
+            </div>
+
+            <p class="no-message">
+                Aasa kyu kiya jiiiiiii? 😭😭😭
+            </p>
+
+            <button class="try-btn"
+                    onclick="returnToSurprise()">
+
+                PLS CLICK YESSS😭😭
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 8 -->
+    <section class="page page8" id="page8">
+
+        <div class="game-bg">
+
+            <!-- MYSTERY BOX -->
+            <div class="game-step" id="mysteryStep">
+
+                <div class="small-title">
+                    HMMM... 👀
+                </div>
+
+                <h1>Mystery Box 🎁</h1>
+
+                <p>
+                    Choose one box... let's see what's inside ✨
+                </p>
+
+                <div class="mystery-boxes">
+
+                    <button class="mystery-box"
+                            onclick="openMysteryBox(this)">
+                        🎁
+                    </button>
+
+                    <button class="mystery-box"
+                            onclick="openMysteryBox(this)">
+                        🎁
+                    </button>
+
+                    <button class="mystery-box"
+                            onclick="openMysteryBox(this)">
+                        🎁
+                    </button>
+
+                </div>
+
+                <div id="boxMessage"></div>
+
+            </div>
+
+
+            <!-- MAGIC WAND -->
+            <div class="game-step hidden-game"
+                 id="wandStep">
+
+                <div class="small-title">
+                    A LITTLE MAGIC ✨
+                </div>
+
+                <h1>Magic Wand 🪄</h1>
+
+                <p>
+                    Tap the wand and make some magic happen...
+                </p>
+
+                <button class="magic-wand"
+                        onclick="useMagicWand()">
+                    🪄
+                </button>
+
+                <div id="wandMessage"></div>
+
+            </div>
+
+
+            <!-- QUIZ -->
+            <div class="game-step hidden-game"
+                 id="quizStep">
+
+                <div class="small-title">
+                    ONE LAST QUESTION 👀
+                </div>
+
+                <h1>You Like Me? 😏</h1>
+
+                <div class="quiz-buttons">
+
+                    <button onclick="quizYes()">
+                        A) YES ❤️
+                    </button>
+
+                    <button onclick="quizYes()">
+                        B) OBVIOUSLY 😏
+                    </button>
+
+                    <button id="quizNo"
+                            onclick="quizNo()">
+                        C) NO 😑
+                    </button>
+
+                </div>
+
+                <div id="quizMessage"></div>
+
+            </div>
+
+
+            <!-- LAST BUTTON -->
+            <button id="lastButton"
+                    class="last-button hidden-game"
+                    onclick="showPage(9)">
+
+                LAST BUT NOT LEAST ✨
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 9 -->
+    <section class="page page9" id="page9">
+
+        <div class="final-bg">
+
+            <div class="particle p1">✦</div>
+            <div class="particle p2">✧</div>
+            <div class="particle p3">✦</div>
+            <div class="particle p4">✧</div>
+            <div class="particle p5">✦</div>
+            <div class="particle p6">✧</div>
+            <div class="particle p7">✦</div>
+            <div class="particle p8">✧</div>
+
+            <div class="final-content">
+
+                <div class="small-title">
+                    ONE MORE THING...
+                </div>
+
+                <h1>
+                    For You ❤️
+                </h1>
+
+                <div class="final-card">
+
+                    <p>
+                         aab pata nahi ye kya phaltu banaya hai 
+                         aacha hai ke nahi pata nahi par chod
+                         bas yehi boluga ke mere saat aache se baat karna 
+                         roj sab baatei batana kya hua class me clg me ghar me 
+                         vase bhe mujhe yehi sab baate aache lagte hai tere 
+                         bohot cute lagte hai yaar ye sab bolne ke time
+                         aase to tere sab baat aache lagte hai par par bhaiya 
+                         tum aase mere se baat nahi karte aache se ignore kartge hai 
+                         aacha nahi lagta par thats okkkkk yehi sab me to maja haii
+                         me to bol raha aap mujhe apne pic bheja karo yaar 
+                         itne saal ho gaye abhe to video call pe aana chahiye
+                         hum dono ko par aap ho ke COMFORTABLE nahi hu bol dete ho
+                         aao yaar maje karege video call pe real life me to nahi
+                         par idhar to sahi aab dekho jab aapko lage karna
+                         at the end HAPPY BRITHDAY VARSHAAAAAAAAA
+                         aaj to aapka din hai maje karooooooo 
+
+                    </p>
+
+                </div>
+
+                <div class="final-sparkles">
+                    ✦ ✧ ✦ ✧ ✦
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
